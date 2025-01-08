@@ -1,0 +1,11 @@
+functions......
+function is block of code used to perform specific task
+functions can be reuse for n number of times
+function is reusable bit of block
+
+syntax:
+function function_name(optional parameters){
+    // statements.
+}
+function_name(arguments);// functional callings.
+note: with out callings a functional body it will never execute
