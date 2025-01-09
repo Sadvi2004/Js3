@@ -9,3 +9,19 @@ function function_name(optional parameters){
 }
 function_name(arguments);// functional callings.
 note: with out callings a functional body it will never execute
+
+named functions : having a name to decalre.
+anonymus functions : doesn't hava any name it can'n be executed independently.
+function expressions : func decleration is assigned as an value to the variable and same function is invoke with the help of variable
+immediate invoke function : we can run this function only one time
+arrow function : to concise the function.
+higher order functions
+callback functions
+
+return : it will return either expression or variables to future use it is an end of an statement.
+implicit return : return without using a return keyword it only work for arrow functions.
+explict return : return with a return keyword.
+
+note: current version of javascript - es14
+es - ECMa script
+ECMA - european computer manufacturing association
