@@ -15,9 +15,10 @@ anonymus functions : doesn't hava any name it can'n be executed independently.
 function expressions : func decleration is assigned as an value to the variable and same function is invoke with the help of variable
 immediate invoke function : we can run this function only one time
 arrow function : to concise the function.
-higher order functions
-callback functions
-
+higher order functions : it is a function which accept another function as value or arguments to its parameter.
+callback functions : it is function which is passed as a value/ arguments to another function
+        map : it can return a value it copies the given array and store it in new array
+        forEach : it cann't return a value it can iterate values
 return : it will return either expression or variables to future use it is an end of an statement.
 implicit return : return without using a return keyword it only work for arrow functions.
 explict return : return with a return keyword.
@@ -25,3 +26,9 @@ explict return : return with a return keyword.
 note: current version of javascript - es14
 es - ECMa script
 ECMA - european computer manufacturing association
+
+closure : closure is a memory created when function bundle together or functions are nested each other by giving accessibility to the innermost functions to access the variables of outmost function
+        variable phase and execution phase in global variables.
+            variable phase : when variable is declared
+            execution phase : when variable is used
+        variables phase and execution phase in function variables.    

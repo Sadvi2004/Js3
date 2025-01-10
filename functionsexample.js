@@ -66,3 +66,41 @@ console.log(xz(10,20));
 
 let xa=(a,b)=>{return a+b};
 console.log(xa(20,40))
+
+//higher order functions
+
+function hof(a){
+    return a();
+}
+let c=hof(function(){return "this is call back function"});
+console.log(c);
+
+
+function add(callback){
+    return callback(5,3);
+}
+let as=add(function(a,b){return a+b});
+console.log(as);
+
+let users=['sadvi','vishnu','shan','sai','yashwanth'];
+for(let i=0;i<users.length;i++){
+    console.log(users[i]);
+}
+let result=users.map((user)=>{
+    return (user)
+});
+console.log(result);
+
+users.forEach((user)=>{
+    console.log(user);
+})
+// let a=10;
+// var b=20;
+// function hello(){
+//     var userr="sadvi";
+//     let company = "Google";
+//     const sal=7670988077;
+//     console.log(userr);
+//     console.log(company);
+//     console.log(sal);
+//     console.log(a,b);console.log("Starting execution of the code");
