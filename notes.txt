@@ -32,3 +32,23 @@ closure : closure is a memory created when function bundle together or functions
             variable phase : when variable is declared
             execution phase : when variable is used
         variables phase and execution phase in function variables.    
+
+Arrays : collection of items/values.
+         it can  store multiple values in a single variable
+         array can store same datatype(homogenous values and hetrogenous values) and different datatype in javascript.
+array methods : push, pop, unshift, shift, splice, sort, reverse, map
+                map : 
+                    it is used to iterate the values of an array one by one it can return a value.
+                forEach : 
+                    it is used to iterate the values of an array one by one but it cann't return a value.
+
+Objects : obj is an entity the main purpose of the object is to store a values in the form of key and value pair
+          obj is a physical entity which is having states (properities) and behaviours(method)
+syntax :{key, value}
+notes : object based language in (2015) + oops After Es6 update.
+
+json : javascript object notation
+       it is used to transmit the data from client to server and server to client.
+syntax :{
+    key, value
+    }    
