@@ -51,4 +51,30 @@ json : javascript object notation
        it is used to transmit the data from client to server and server to client.
 syntax :{
     key, value
-    }    
+    } 
+
+methods of JSON:
+1. JSON.stringify()
+2. JSON.parse()
+3. JSON.stringify() : it is used to convert the object into string.
+4. JSON.parse() : it is used to convert the string into object.
+
+
+webstorages: it can store the data inside the browser
+             upto 10MB of data can be stored
+1. local storage : it is used to store the data in the local machine.(it is a permanent data storage , it is used to store 10MB data)
+                   1.localStorage.setItem("key", "value")
+                   2.localStorage.getItem("key")
+                   3.localStorage.removeItem("key")
+                   4.localStorage.clear()
+2. session storage : it is used to store the data in the session.(it is a temporary data storage , it is used to store 5MB data)
+                   1.sessionStorage.setItem("key", "value")
+                   2.sessionStorage.getItem("key")
+                   3.sessionStorage.removeItem("key")
+                   4.sessionStorage.clear()
+
+
+Note : javascript is synchronous (single threaded language)
+       Asynchronous methods:
+                    settimeout() : it is used to execute the function after the specified time.
+                    setInterval() : it is used to execute the function after the specified time.
