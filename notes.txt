@@ -76,5 +76,19 @@ webstorages: it can store the data inside the browser
 
 Note : javascript is synchronous (single threaded language)
        Asynchronous methods:
-                    settimeout() : it is used to execute the function after the specified time.
-                    setInterval() : it is used to execute the function after the specified time.
+                    settimeout() : It is a web api used to perform Asynchronous operation only single output.
+                                    settimeout(callbackfn, timeout)
+                    setInterval() : it is used to execute the function after the specified time continuously prints output.
+                                    setInterval(callbackfn, timeinterval)
+                    promise() : it is an Es6 feature (It is an object which represents eventual completion or failures of Async operations).
+                                states of promise:
+                                            1.pending:ongoing
+                                            2.fulfilled:successfully completed
+                                            3.rejected:failures
+                                            syntax: let x=new promise ((resolve,reject)=>{})
+
+                                            for handling the promise we have a instance methods'
+                                            1.then() : used to successful data
+                                            2.catch() : it is used to handle errors
+                                            3.finally() : it prints the result always.
+                    Async & await : 
