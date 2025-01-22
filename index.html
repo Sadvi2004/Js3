@@ -5,17 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="store"></div>
-    <h1 style="text-align: center;">Welcome to JavaScript</h1>
+    <!-- Removed the duplicate div with id="store" -->
+    <!-- <h1 style="text-align: center;">Welcome to JavaScript</h1> -->
+    <table>
+        <thead>
+            <tr>
+                <th>Sno</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Company</th>
+            </tr>
+        </thead>
+        <tbody id="store">
+            <!-- Table rows will be inserted here -->
+        </tbody>
+    </table>
     <!-- <script src="./patterns.js"></script> -->
     <!-- <script src="./functionsexample.js"></script> -->
     <!-- <script src="./functions2.js"></script> -->
     <!-- <script src="./objects.js"></script> -->
     <!-- <script src="./webstorage.js"></script> -->
-    <script src="./async.js"></script>
+    <!-- <script src="./async.js"></script> -->
+    <script src="./fetch.js"></script>
 </body>
 
 </html>
