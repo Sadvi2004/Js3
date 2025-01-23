@@ -92,3 +92,22 @@ Note : javascript is synchronous (single threaded language)
                                             2.catch() : it is used to handle errors
                                             3.finally() : it prints the result always.
                     Async & await : 
+                    async : this keyword makes synchronous function as Asynchronous function and start execution
+                    await : this keyword will make the function to wait until promise completes.
+
+
+.........DOM : Document object model.....
+Dom is web api used to manipulate the HTML content.
+Dom is used to add, remove, update the content inside the html document..
+
+methods of Dom:
+    document.getElementById('') : based on id attribute value.
+    document.getElementByClassName('') : based on class attribute value.
+    document.getElementByTagName('') : based on tag name (e.g. p,h,etc)
+    document.getElementByName('') : It will help to store the form data
+    document.querySelector('') : it only select only one element based on css style attribute.
+    document.querySelectorAll('') : it will select all elements
+
+
+innerText :- help to change the inner text in the document.
+innerHtml : add the value along with the tag.    
