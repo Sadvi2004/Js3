@@ -110,4 +110,11 @@ methods of Dom:
 
 
 innerText :- help to change the inner text in the document.
-innerHtml : add the value along with the tag.    
+innerHtml : add the value along with the tag.
+
+Events in javascript : 
+    events are nothing but an action to perform on html elements.
+    
+    we have click,mouse,key events.
+
+    click events : onclick,ondblclick,onchange
