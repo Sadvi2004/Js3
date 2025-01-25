@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRcode Generator</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            width: 100%;
+        }
+
+        .container {
+            width: 320px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container h1 {
+            flex-basis: 15%;
+            background: #857272;
+            font-size: 28px;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .imgBlock {
+            flex-basis: 75%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .content {
+            flex-basis: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .content input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #857272;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Qrcode Generator</h1>
+        <div class="imgBlock">
+            <img src="" alt="">
+        </div>
+        <div class="content">
+            <input type="text" name="text" id="inpvalue" placeholder="Enter the link">
+            <button>Generate Qrcode</button>
+        </div>
+    </div>
+    <script>
+        let image = document.querySelector('img')
+        let contentval = document.querySelector('#inpvalue')
+        let btn = document.querySelector('button')
+        btn.addEventListener('click', () => {
+            let linkQr = ' https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=';
+            let data = contentval.value;
+            let value = linkQr + data;
+            image.src = value;
+        })
+    </script>
+</body>
+
+</html>
