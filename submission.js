@@ -1,7 +1,20 @@
 let username = document.getElementById('name');
 let Password = document.getElementById('password');
+let checks = document.getElementById('check');
+let shows = document.getElementById('show');
 let form = document.querySelector('form');
 let gen = document.getElementsByName("gender");
+
+
+checks.addEventListener("click", (event) => {
+    if (event.target.checked == true) {
+        Password.setAttribute("type", "text");
+        shows.innerText = "Hide Password";
+    } else {
+        Password.setAttribute("type", "password");
+        shows.innerText = "Show Password";
+    }
+})
 
 form.addEventListener('submit', event => {
     event.preventDefault();
