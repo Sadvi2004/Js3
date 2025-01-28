@@ -118,3 +118,5 @@ Events in javascript :
     we have click,mouse,key events.
 
     click events : onclick,ondblclick,onchange
+
+....................28-01-2025....................
