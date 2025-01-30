@@ -21,31 +21,90 @@
 </head>
 
 <body>
-    <!-- Removed the duplicate div with id="store" -->
     <h1 style="text-align: center;">Welcome to JavaScript</h1>
-    <!-- <table>
+    <table>
         <thead>
             <tr>
-                <th>Sno</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Company</th>
+                <th>sno</th>
+                <th>name</th>
+                <th>company</th>
+                <th>salary</th>
+                <th>city</th>
+                <th>area</th>
             </tr>
         </thead>
         <tbody id="store">
-            <! Table rows will be inserted here -->
-    <!-- </tbody>
-    </table> -->
-    <!-- <script src="./patterns.js"></script> -->
-    <!-- <script src="./functionsexample.js"></script> -->
-    <!-- <script src="./functions2.js"></script> -->
-    <!-- <script src="./objects.js"></script> -->
-    <!-- <script src="./webstorage.js"></script> -->
-    <!-- <script src="./async.js"></script> -->
-    <!-- <script src="./fetch.js"></script> -->
-    <!-- <script src="./asyncawit.js"></script> -->
-    <!-- <script src="./assignment.js"></script> -->
-    <!-- <script src="./submission.js"></script> -->
+
+        </tbody>
+    </table>
+    <script>
+        let employees = [
+            {
+                empId: "1",
+                empName: "saiKumar",
+                empCompany: "Google",
+                empSalary: 100000,
+                empAddress: {
+                    empCity: "Delhi",
+                    empArea: "Gurgaon",
+                }
+            },
+            {
+                empId: "2",
+                empName: "ram",
+                empCompany: "TCS",
+                empSalary: 150000,
+                empAddress: {
+                    empCity: "bangalore",
+                    empArea: "MG Road",
+                }
+            },
+            {
+                empId: "3",
+                empName: "Gopi",
+                empCompany: "Infosys",
+                empSalary: 120000,
+                empAddress: {
+                    empCity: "chennai",
+                    empArea: "Indiranagar",
+                }
+            },
+            {
+                empId: "4",
+                empName: "Mahesh",
+                empCompany: "Wipro",
+                empSalary: 130000,
+                empAddress: {
+                    empCity: "pune",
+                    empArea: "Nashik",
+                }
+            },
+            {
+                empId: "5",
+                empName: "Krishna",
+                empCompany: "Facebook",
+                empSalary: 110000,
+                empAddress: {
+                    empCity: "mumbai",
+                    empArea: "Andheri",
+                }
+            }
+        ];
+
+        let str = document.getElementById("store");
+        employees.forEach(emps => {
+            str.innerHTML += `
+                <tr>
+                    <td>${emps.empId}</td>
+                    <td>${emps.empName}</td>
+                    <td>${emps.empCompany}</td>
+                    <td>${emps.empSalary}</td>
+                    <td>${emps.empAddress.empCity}</td>
+                    <td>${emps.empAddress.empArea}</td>
+                </tr>
+            `;
+        });
+    </script>
 </body>
 
 </html>

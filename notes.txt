@@ -120,3 +120,14 @@ Events in javascript :
     click events : onclick,ondblclick,onchange
 
 ....................28-01-2025....................
+
+
+Modules:
+********************************
+modules are like import/export code to another js files
+namedExport:export was return with in the code same name should be used while importing
+defaultExport:exports all code can be used different name while importing.we want to use default() method while exporting.
+
+Qlans:
+********************************
+create a signup form that contains user email password and conform passeword click on submit button alert should be pops up on ypur screen like form is submitted if and only if all the details are correct
