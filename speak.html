@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <button>speak</button>
+    <script>
+        let textarea = document.querySelector('textarea');
+        let btn = document.querySelector('button');
+        let speech = new SpeechSynthesisUtterance();
+        btn.addEventListener('click', e => {
+            speech.text = textarea.value;
+            speech.volume = 1;
+            speech.rate = 1;
+            speech.pitch = 1;
+            window.speechSynthesis.speak(speech);
+        })
+    </script>
+</body>
+
+</html>
